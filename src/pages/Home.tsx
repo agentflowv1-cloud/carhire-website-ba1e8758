@@ -1,16 +1,12 @@
 import React from 'react';
-import Card from '../components/Card';
-import cars from '../data/cars';
+
 function Home() {
   return (
-    <div className="container mx-auto p-4 pt-6 mt-10">
-      <h1 className="text-3xl font-bold mb-4">Available Cars</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {cars.map((car, index) => (
-          <Card key={index} car={car} />
-        ))}
-      </div>
+    <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-8">
+      <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-gray-700">Welcome to Responsive Design</h1>
+      <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mt-4 md:mt-6 lg:mt-8">This is a sample website with responsive design.</p>
     </div>
   );
 }
+
 export default Home;
